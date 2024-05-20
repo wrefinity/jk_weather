@@ -6,7 +6,7 @@ const Index = () => {
   const [data, setData] = useState(null);
   useEffect(() => {
 
-    fetch('data.js')
+    fetch('data.json')
       .then((response) => response.json())
       .then((data) => setData(data))
       .catch((error) => console.error('Error fetching data:', error));
